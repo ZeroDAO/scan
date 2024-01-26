@@ -59789,6 +59789,55 @@ export const typesBundle = {
         }
       ]
     },
+    "melodot": {
+      "rpc": {
+        "das": {
+          "submitBlobTx": {
+            "description": "Get Block Length",
+            "params": [
+              {
+                "name": "data",
+                "type": "Vec<u8>"
+              },
+              {
+                "name": "extrinsic",
+                "type": "Vec<u8>"
+              }
+            ],
+            "type": "BlockLength"
+          }
+        }
+      },
+      "types": [
+        {
+          "minmax": [
+            0,
+            null
+          ],
+          "types": {
+            "Header": {
+              "parentHash": "Hash",
+              "number": "Compact<BlockNumber>",
+              "stateRoot": "Hash",
+              "extrinsicsRoot": "Hash",
+              "digest": "Digest",
+              "extension": "HeaderExtension"
+            },
+            "HeaderExtension": {
+              "commitments_bytes": "Vec<u8>"
+            },
+            "KZGCommitment": "Vec<u8>",
+            "KZGProof": "Vec<u8>",
+            "Blob": "Vec<u8>",
+            "BlsScalar": "Vec<u8>",
+            "BlobTxSatus": {
+              "tx_hash": "Hash",
+              "err": "Option<Vec<u8>>"
+            }
+          }
+        }
+      ]
+    },
     "mathchain-galois": {
       "types": [
         {

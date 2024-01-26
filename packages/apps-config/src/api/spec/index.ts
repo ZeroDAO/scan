@@ -136,6 +136,7 @@ import zCloak from './zCloak.js';
 import zeitgeist from './zeitgeist.js';
 import zenlink from './zenlink.js';
 import zero from './zero.js';
+import melodot from './melodot.js';
 
 // NOTE: The mapping is done from specName in state.getRuntimeVersion
 const spec: Record<string, OverrideBundleDefinition> = {
@@ -236,6 +237,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   'mangata-parachain': mangata,
   'manta-node': manta,
   mathchain,
+  melodot,
   'mathchain-galois': galois,
   moonbase: moonbeam,
   moonbeam,
@@ -307,7 +309,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   vodka,
   'web3games-node': web3games,
   'zcloak-network': zCloak,
-  zeitgeist
+  zeitgeist,
 };
 
 export default spec;

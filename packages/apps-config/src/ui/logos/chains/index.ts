@@ -40,6 +40,7 @@ export { chainsListenPNG } from './generated/listenPNG.js';
 export { chainsLogionPNG } from './generated/logionPNG.js';
 export { chainsMangataPNG } from './generated/mangataPNG.js';
 export { chainsMangataxPNG } from './generated/mangataxPNG.js';
+export { chainsMelodotSVG } from './generated/melodotSVG.js';
 export { chainsMoonsamaPNG } from './generated/moonsamaPNG.js';
 export { chainsMyriadPNG } from './generated/myriadPNG.js';
 export { chainsNeurowebTestnetPNG } from './generated/neuroweb-testnetPNG.js';

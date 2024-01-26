@@ -64,7 +64,8 @@
     "test": "polkadot-dev-run-test --env browser ^typesBundle ^chainEndpoints ^chainTypes ^page- ^react- ^apps-electron",
     "test:all": "polkadot-dev-run-test --env browser ^chainEndpoints ^chainTypes",
     "test:one": "polkadot-dev-run-test --env browser",
-    "test:skipped": "echo 'tests skipped'"
+    "test:skipped": "echo 'tests skipped'",
+    "relesae": "bash scripts/release.sh GH=1"
   },
   "devDependencies": {
     "@crustio/crust-pin": "^1.0.0",
