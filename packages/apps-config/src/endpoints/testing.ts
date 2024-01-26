@@ -18,6 +18,17 @@ export * from './testingRelayWestend.js';
 // IMPORTANT: Alphabetical based on text
 export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
+    info: 'melodot',
+    providers: {
+      'Overtrue': 'wss://dev.melodot.io/ws'
+    },
+    text: 'Melodot Overtrue',
+    ui: {
+      logo: chainsMelodotSVG,
+      color: '#e4007f'
+    }
+  },
+  {
     info: '3dpass-testnet',
     providers: {
       // '3dpass': 'wss://test-rpc.3dpass.org' // https://github.com/polkadot-js/apps/issues/9443
@@ -1067,17 +1078,6 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Zero Alphaville',
     ui: {
       color: '#000000'
-    }
-  },
-  {
-    info: 'melodot',
-    providers: {
-      DappForce: 'wss://dev.melodot.io/ws'
-    },
-    text: 'Melodot Overtrue',
-    ui: {
-      logo: chainsMelodotSVG,
-      color: '#e4007f'
     }
   }
 ];

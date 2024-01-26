@@ -36,6 +36,7 @@ function getApiUrl (): string {
   }
 
   const endpoints = createWsEndpoints(<T = string>(): T => ('' as unknown as T));
+
   const { ipnsChain } = extractIpfsDetails();
 
   // check against ipns domains (could be expanded to others)
@@ -48,7 +49,8 @@ function getApiUrl (): string {
   }
 
   const stored = store.get('settings') as Record<string, unknown> || {};
-  const fallbackUrl = endpoints.find(({ value }) => !!value);
+  // const fallbackUrl = endpoints.find(({ value }) => !!value);
+  const fallbackUrl = endpoints.find(({ value }) => value === 'wss://dev.melodot.io/ws');
 
   // via settings, or the default chain
   return [stored.apiUrl, process.env.WS_URL].includes(settings.apiUrl)
